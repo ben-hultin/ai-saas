@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider signInFallbackRedirectUrl="/" signUpFallbackRedirectUrl="/" >
       <html lang="en">
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>{children}</body>
       </html>
